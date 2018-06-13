@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 centered-text" ng-repeat="candidate in candidates">
+        <h2>{{ candidate.Name}}</h2>
+        <div class="profile-avatar">
+            <img class="img-responsive"
+                 ng-src="{{ candidate.profileImage }}" alt="profile picture"
+                 ui-sref="viewCandidates({ candidateId: candidate.candidateId })">
+        </div>
+    </div>
+</div>

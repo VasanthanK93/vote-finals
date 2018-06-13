@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a ng-click="setPosition(0)">SPL</a></li>
+            <li role="presentation"><a ng-click="setPosition(1)">ASPL1EM</a></li>
+            <li role="presentation"><a ng-click="setPosition(2)">ASPL1TM</a></li>
+            <li role="presentation"><a ng-click="setPosition(3)">ASPL2EM</a></li>
+            <li role="presentation"><a ng-click="setPosition(4)">ASPL2TM</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-8 col-md-8 col-md-offset-1 col-sm-12 centered-text">
+        <nvd3 options="chartOptions" data="chartData"></nvd3>
+    </div>
+</div>

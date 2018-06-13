@@ -1,0 +1,26 @@
+<h1>The New Executive Board</h1>
+<div class="container">
+    <div class="row profile">
+        <div class="col-md-4 voffset-2"  ng-repeat="candidate in winningCandidates">
+            <div class="profile-sidebar">
+                <div class="profile-userpic">
+                    <img ng-src="{{ candidate.profileImage }}" class="img-responsive animate-me-inverse" alt="">
+                </div>
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        {{ candidate.label }}
+                    </div>
+                    <div class="profile-usertitle-job">
+                        {{ candidate.position }}
+                    </div>
+                </div>
+                <!--div class="profile-userbuttons animate-me">
+                    <a type="button" class="btn btn-info btn-sm" href="http://twitter.com/share?text=' + {{ candidate.label }} + ' is the new ' + {{ candidate.position }} + '&amp;hashtag=votingapp">
+                        Tweet
+                    </a>
+                    <a href="mailto:{{ candidate.email }}" type="button" class="btn btn-sm btn-primary">Message</a>
+                </div-->
+            </div>
+        </div>
+    </div>
+</div>

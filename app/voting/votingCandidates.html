@@ -1,0 +1,17 @@
+<div class="alert alert-info animate-me-inverse" role="alert"
+     ng-show="positionFilter">
+     You are voting for <strong>{{ positionFilter }}</strong>
+</div>
+
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 centered-text animate-me" ng-repeat="candidate in candidates">
+        <h2>{{ candidate.Name }}</h2><br>
+        <div class="profile-avatar">
+            <img class="img-responsive"
+                 ng-src="{{ candidate.profileImage }}" alt="profile picture"
+                 ui-sref="candidateDetails({ candidateId: candidate.candidateId })" />
+        </div>
+        <a ui-sref="candidateDetails({ candidateId: candidate.candidateId })"  class="btn btn-info voffset-1">Vote</a>
+        
+    </div>
+</div>
